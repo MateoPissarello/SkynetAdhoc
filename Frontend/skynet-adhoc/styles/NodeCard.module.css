@@ -1,0 +1,136 @@
+.card_container {
+    background-color: rgb(241, 238, 238);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 98rem;
+    position: relative; /* Necesario para posicionar elementos dentro */
+}
+
+/* Contenido de la tarjeta (imagen + texto) */
+.cardContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Imagen a la izquierda */
+.nodeImage {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem; /* Espacio entre la imagen y el texto */
+}
+
+/* Contenedor de texto */
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; /* Asegura que el texto ocupe todo el espacio disponible */
+    position: relative; /* Necesario para colocar elementos dentro */
+}
+
+/* Contenedor del estado y el botón */
+.statusContainer {
+    display: flex;
+    flex-direction: column;/* align-items: flex-end; Alinea todo a la derecha */
+    gap: 8px; /* Espacio entre el estado y el botón */
+    position: absolute; /* Posicionar en la esquina */
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtatusContainer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 0.5rem;
+}   
+
+/* Circulito de estado */
+.statusIndicator {
+    margin-top: 3px;
+    height: 100%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+/* Estado "Conectado" */
+.connected {
+    background-color: green;
+}
+
+/* Estado "Desconectado" */
+.disconnected {
+    background-color: red;
+}
+
+/* Texto de estado */
+.statusText {
+    height: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 4px;
+    /* background-color: pink; */
+}
+
+/* Título de la IP */
+.ip_title {
+    font-size: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+}
+
+/* Botón de temperatura */
+.temperatureButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.temperatureButton:hover {
+    background-color: #45a049;
+}
+
+.modalInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modalTitles{
+    font-size: 3rem;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+}
+.temperatureInfo{
+    text-align: center;
+}
+.humidityInfo{
+    text-align: center;
+}
+
+.modalText{
+    margin: 20px;
+    font-size: 1.5rem;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+}
+
